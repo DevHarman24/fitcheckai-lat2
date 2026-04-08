@@ -1,25 +1,37 @@
 @echo off
-echo [GitHub Repository Setup and Push]
+echo ==============================================
+echo       Universal GitHub Repo Uploader
+echo ==============================================
 echo.
-echo 1. Initializing Git...
+set /p REPO_URL="1. Paste your NEW GitHub Repository URL here (e.g. https://github.com/... ): "
+
+echo.
+echo 2. Initializing Git...
 git init
+
 echo.
-echo 2. Checking or Adding remote origin...
+echo 3. Linking to your repository...
 git remote remove origin 2>nul
-git remote add origin https://github.com/DevHarman24/Fitcheck-ai.git
+git remote add origin %REPO_URL%
+
 echo.
-echo 3. Staging code...
+echo 4. Staging all files safely (ignoring node_modules)...
 git add .
+
 echo.
-echo 4. Commiting...
-git commit -m "Fix TryOn section GARMENT image URL and sync latest local changes for Vercel"
+echo 5. Committing changes...
+git commit -m "Initial commit with App Router + Vercel deployment"
+
 echo.
-echo 5. Setting branch to main...
+echo 6. Setting branch to main...
 git branch -M main
+
 echo.
-echo 6. Pushing to GitHub (origin/main)...
-git push -u origin main
+echo 7. Pushing securely to GitHub...
+git push -u origin main --force
+
 echo.
-echo [Process Complete] If it says "non-fast-forward", you may need to force push. Otherwise, check your Vercel Dashboard!
-echo Press any key to close this window.
+echo ==============================================
+echo [SUCCESS] Your code is now fully uploaded!
+echo ==============================================
 pause
