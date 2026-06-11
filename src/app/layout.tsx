@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Lumière — Men's Boutique",
+  title: "SmartStitch — Men's Boutique",
   description: "Premium men's shirts with AI-powered Virtual Try-On. Shop Casual, Formal, and Linen collections.",
 };
 

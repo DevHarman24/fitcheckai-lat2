@@ -51,7 +51,7 @@ async function tryWithToken(
     if (typeof output === 'string') return output;
     if (output?.url) return output.url;
     if (output?.path) return output.path;
-    throw new Error('Unexpected output format from IDM-VTON.');
+    throw new Error('Unexpected output format from AI model.');
 }
 
 export async function POST(req: NextRequest) {
@@ -105,7 +105,7 @@ export async function POST(req: NextRequest) {
         throw lastError ?? new Error('All API tokens have hit their quota. Please try again later.');
 
     } catch (err: any) {
-        console.error('IDM-VTON error:', err?.message ?? err);
+        console.error('AI try-on error:', err?.message ?? err);
         return NextResponse.json(
             { error: err?.message ?? 'Failed to run virtual try-on.' },
             { status: 500 },

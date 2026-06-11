@@ -112,7 +112,7 @@ export default function Home() {
           background: 'var(--bg-secondary)',
         }}
       >
-        <p>© 2026 Lumière Men's Boutique. All rights reserved.</p>
+        <p>© 2026 SmartStitch Men's Boutique. All rights reserved.</p>
         <p style={{ marginTop: 6 }}>Virtual Try-On powered by MediaPipe Pose.</p>
       </footer>
     </div>

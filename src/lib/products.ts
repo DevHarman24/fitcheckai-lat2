@@ -8,7 +8,7 @@ export interface Product {
     color: string;
     description: string;
     imageUrl: string;
-    // Clean flat-lay / product garment image sent to IDM-VTON as the "garm_img" input
+    // Clean flat-lay / product garment image sent to the AI model as the "garm_img" input
     overlayUrl: string;
 }
 

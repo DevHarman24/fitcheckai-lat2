@@ -235,7 +235,7 @@ export default function TryOnSection({ product }: TryOnSectionProps) {
                     See it on you
                 </h2>
                 <p style={{ color: 'var(--text-secondary)', marginTop: 8, maxWidth: 580 }}>
-                    Powered by <strong>IDM-VTON</strong> — the same photorealistic AI model used by commercial fashion apps.
+                    Powered by <strong>Advanced AI</strong> — the same photorealistic AI model used by commercial fashion apps.
                     Upload your photo and watch the shirt physically replace yours.
                 </p>
             </div>
@@ -377,7 +377,7 @@ export default function TryOnSection({ product }: TryOnSectionProps) {
                     <div style={{ padding: '64px 32px', textAlign: 'center' }}>
                         <LoadingDots label={processingLabel} />
                         <p style={{ fontSize: 12, color: 'var(--text-tertiary)', marginTop: 20, maxWidth: 360, margin: '20px auto 0' }}>
-                            IDM-VTON is a diffusion model — it physically drapes the fabric onto your body shape. This typically takes 20–60 seconds.
+                            The AI is a diffusion model — it physically drapes the fabric onto your body shape. This typically takes 20–60 seconds.
                         </p>
                         {/* Progress bar */}
                         <div style={{ width: '100%', maxWidth: 300, height: 3, background: 'var(--bg-tertiary)', borderRadius: 2, margin: '24px auto 0', overflow: 'hidden' }}>
@@ -498,7 +498,7 @@ export default function TryOnSection({ product }: TryOnSectionProps) {
                     {[
                         { icon: '👔', title: 'Pick a shirt', desc: 'Browse our catalog and click "Try It On" on any shirt.' },
                         { icon: '📸', title: 'Upload photo', desc: 'Upload a full-body photo facing the camera.' },
-                        { icon: '🤖', title: 'AI generates', desc: 'IDM-VTON model physially drapes the shirt onto your body.' },
+                        { icon: '🤖', title: 'AI generates', desc: 'The AI model physically drapes the shirt onto your body.' },
                         { icon: '✨', title: 'See the result', desc: 'Compare before/after and download your try-on photo.' },
                     ].map((item) => (
                         <div key={item.title} style={{ background: 'var(--bg-primary)', border: '1px solid var(--border-color)', borderRadius: 14, padding: '20px 18px', boxShadow: 'var(--shadow-sm)' }}>

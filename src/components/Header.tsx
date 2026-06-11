@@ -28,19 +28,6 @@ export default function Header() {
                         gap: 8,
                     }}
                 >
-                    <div
-                        style={{
-                            width: 28,
-                            height: 28,
-                            borderRadius: 8,
-                            background: 'var(--text-primary)',
-                            display: 'flex',
-                            alignItems: 'center',
-                            justifyContent: 'center',
-                        }}
-                    >
-                        <span style={{ color: 'white', fontSize: 13, fontWeight: 700, fontStyle: 'italic' }}>L</span>
-                    </div>
                     <span
                         style={{
                             fontSize: 17,
@@ -49,7 +36,7 @@ export default function Header() {
                             color: 'var(--text-primary)',
                         }}
                     >
-                        Lumière
+                        SmartStitch
                     </span>
                 </a>
 
